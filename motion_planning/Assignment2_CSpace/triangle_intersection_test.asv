@@ -1,0 +1,20 @@
+
+disp('Checking on triangle in another')
+T1 = [0 0; 0 1; 1 0; ];
+T2 = [ -1 -1;  0 2; 2 0 ];
+triangle_intersection(T1,T2)
+    
+disp('Checking one point inside the triangle')
+T1 = [0 0; 0 1; 1 0];
+T2 = [0.2 0.2; 0.2 2; 2 0.2];
+triangle_intersection(T1,T2)
+
+disp('Checking one point touch')
+T1 = [0 0; 0 1; 1 0];
+T2 = [-1 -1; 0 0; 2 -1];
+triangle_intersection(T1,T2)
+
+disp('Checking no collision')
+T1 = [0 0; 0 1; 1 0];
+T2 = [ -1; 0 0; 2 -1];
+triangle_intersection(T1,T2)
